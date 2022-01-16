@@ -1,0 +1,26 @@
+*{
+    color: white;
+}
+.box-my-description{
+    cursor: pointer;
+    border: dashed black 2px;
+    height: 230px;
+    width: 50%;
+    padding: 30px 60px 0px 60px;
+    margin: 20px 20px 20px 20px;
+}
+.box-my-description:hover{
+    background-color: rgb(119, 119, 119);
+}
+
+@media screen and (max-width:960px){
+
+    .box-my-description{
+        border: dashed black 2px;
+        height: 250px;
+        width: 90%;
+        padding: 30px 60px 0px 60px;
+        margin: 20px 20px 20px 20px;
+    }
+    
+}

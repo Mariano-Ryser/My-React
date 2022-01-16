@@ -3,6 +3,7 @@
 }
 
 .btn{
+    margin-right: 10px; 
     padding: 8px 20px;
     border-radius: 4px;
     outline: none;
@@ -12,9 +13,9 @@
 
 .btn:hover{
     padding: 8px 20px;
-    transition: all 0.3s ease-out;
-    background: #fff;
-    transition: 250ms;
+    /* transition: all 0.3s ease-out; */
+    background: rgb(60, 243, 23);
+    /* transition: 250ms; */
 }
 
 .btn--primary{
@@ -26,7 +27,7 @@
     padding: 8px 20px;
     border-radius: 4px;
     border: 1px solid var(--primary);
-    transition: all 0.3s ease-out;
+    /* transition: all 0.3s ease-out; */
 }
 
 .btn--medium{
