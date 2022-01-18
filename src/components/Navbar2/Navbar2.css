@@ -1,0 +1,57 @@
+.NavbarItems {
+    /* background: linear-gradient(90deg, rgb(110,94,254) 0%, rgba(73,63,252,1)100%); */
+    background:linear-gradient(black, rgb(39, 39, 39));
+    height: 630px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.portfolio{
+    font-size: 1.4rem;
+    margin: 10px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.foto{
+    margin: auto;
+    background-image: url(/src/assets/img/MR2.jpg);
+    background-size: cover;
+     border-radius: 50%;
+     height: 270px;
+     width: 270px;
+ }
+
+.mariano{
+    margin: 10px;
+    color: white;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width:960px){
+
+    .portfolio{
+        font-size: 1.0rem;
+        margin: 10px;
+        color: rgb(255, 255, 255);
+        text-align: center;
+    }
+    
+    .foto{
+        margin: auto;
+        background-image: url(/src/assets/img/MR2.jpg);
+        background-size: cover;
+         border-radius: 50%;
+         height: 200px;
+         width: 200px;
+     }
+    
+    .mariano{
+        font-size: 0.8rem;
+        color: white;
+        text-align: center;
+    }
+}
