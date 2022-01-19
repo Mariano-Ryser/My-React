@@ -1,6 +1,6 @@
 .NavbarItems {
     /* background: linear-gradient(90deg, rgb(110,94,254) 0%, rgba(73,63,252,1)100%); */
-    background:linear-gradient(black, rgb(39, 39, 39));
+    /* background:linear-gradient(black, rgb(39, 39, 39)); */
     height: 630px;
     display: flex;
     justify-content: center;
