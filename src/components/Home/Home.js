@@ -1,4 +1,5 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
+
 import './home.css';
 
 
@@ -14,8 +15,9 @@ class Home extends Component {
                 <div className="col">------</div>
                 <div className="col">------</div>
                 <div className="col">------</div>
-                
             </div>
+          
+        
          </div>
             
         )

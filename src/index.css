@@ -11,3 +11,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.button{
+  
+  background: chartreuse;
+  height: 30px;
+  width: 140px;
+  box-shadow: inset black 0px 0px 5px;
+  transition: 0.1s;
+}
+.button:hover{
+  background: rgb(85, 167, 3);
+}
+.container-eje{
+  
+  padding: 20px;
+  border: solid black 1px;
+  margin: 80px;
+}
