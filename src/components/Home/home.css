@@ -12,11 +12,11 @@
     align-items: center;
 }
 .col{
-    transition: all 1s;
+    transition: all 0.1s;
     height: 200px;
     /* border: solid 1px black; */
 }
 .col:hover{
     /* border: white solid 4px; */
-    background-color: whitesmoke;
+    background-color: rgb(190, 49, 49);
 }
