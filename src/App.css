@@ -1,34 +1,28 @@
-.App{
-  text-align: center;
-}
-
-nav{
-  margin: 0;
-  padding: 0;
-  width: 200px;
-  background-color: #f1f1f1;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
-}
-
-.nav-links{
+*{
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+  font-family: 'Press Start 2P', cursive;
+ 
 }
-
-li{
-  font-size: 25px;
-  height: 44px;
+body{
+  color: black;
+ background:rgb(255, 255, 255);
+}
+.button{
+  
+  background: chartreuse;
+  height: 30px;
+  width: 140px;
+  box-shadow: inset black 0px 0px 5px;
   transition: 0.1s;
 }
-li:hover{
-  background-color: rgb(35, 236, 35);
-  cursor: pointer;
+.button:hover{
+  background: rgb(85, 167, 3);
 }
-
-.cal{
-  height: 100%;
-  margin-left: 200px;
-  border: solid black 3px;
+.container-eje{
+  
+  padding: 20px;
+  border: solid black 1px;
+  margin: 80px;
 }
