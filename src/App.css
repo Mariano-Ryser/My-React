@@ -2,27 +2,17 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Press Start 2P', cursive;
  
 }
 body{
-  color: black;
- background:rgb(255, 255, 255);
+  color: rgb(253, 253, 253);
+ background:rgb(0, 0, 0);
 }
-.button{
-  
-  background: chartreuse;
-  height: 30px;
-  width: 140px;
-  box-shadow: inset black 0px 0px 5px;
-  transition: 0.1s;
-}
-.button:hover{
-  background: rgb(85, 167, 3);
-}
-.container-eje{
-  
-  padding: 20px;
-  border: solid black 1px;
-  margin: 80px;
+.container{
+  display: flex;
+  background-color: rgb(59, 14, 14);
+  justify-content: center;
+  padding: 70px 0px 70px 0px;
+  border: solid rgb(20, 20, 20) 3px;
+  margin: 5% ;
 }

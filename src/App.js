@@ -1,33 +1,28 @@
-import React, { useState } from 'react';
-import Navbar from './components/Navbar/Navbar';
-import Home from './components/Home/Home';
-import Footer from './components/Footer/Footer';
+import React, { useState, useEffect } from 'react';
+import Act1 from './Act1';
+import Act2 from './Act2';
+import Act3 from './Act3';
 
 import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [show, setShow] = useState(false);
+  
   
   return (
     <div className="App">
-      <Navbar />
-      <Home />
+       <button onClick={()=> setShow(!show)}>Show </button>
+      {show && <Act1 /> }
+       
+       {/* <Act2 /> 
+      <button onClick={()=> setShow(!show)}>Show size</button>
+      {show && <Act3 />}  */}
       
-     <div className='container-eje'>
-     <h1 className="title">Hola aqui</h1>
-          <br></br>
-          <p className="p">Donde estaremos probando los Hooks de React
-          el primero es el UseState()</p>
-          <br></br>
-      <p>You clicked {count} times</p>
-        <br></br>
-         <button className='button' onClick={() => setCount(count + 1)}>Increment</button>
-         <button className='button' onClick={() => setCount(count - 1)}>Decrement</button>
-      </div>
-
-      <Footer />
+      
     </div>
   );
 }
 
 export default App;
+
+
