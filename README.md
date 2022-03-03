@@ -1,4 +1,4 @@
-# My portfolio with React 
+# My app
 
 This will be my personal Portfolio where I will be constantly updating and working on it.
 Little by little I will add projects in which I have worked and in which I am currently working.
