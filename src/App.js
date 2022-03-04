@@ -20,13 +20,22 @@ const initialTodos = [
       completed: false
   }
 ];
+const localTodos = JSON.parse(localStorage.getItem('todos'));
 
 function App() {
-  const [show, setShow] = useState(false);
-  const [todos, setTodos] = useState(initialTodos);
+  // const [show, setShow] = useState(false);
+  const [todos, setTodos] = useState(localTodos || initialTodos);
   const [todoEdit, setTodoEdit] = useState(null);
+  
+  useEffect(()=> {
+    localStorage.setItem('todos', JSON.stringify(todos))
+  },[todos])
 
   const todoDelete = (todoId) => {
+
+    if(todoEdit && todoId === todoEdit.id) {
+      setTodoEdit(null);
+    }
 
     const changedTodos = todos.filter(todo => todo.id !== todoId)
 
@@ -58,6 +67,16 @@ function App() {
 
     setTodos(changedTodos)
   }
+
+  const todoUpdate = (todoEdit) =>{
+    const changedTodos = todos.map(todo => (
+      todo.id === todoEdit.id
+       ? todoEdit
+       : todo
+    ))
+
+    setTodos(changedTodos);
+  }
  
   return (
     <div className="container mt-4">
@@ -66,11 +85,16 @@ function App() {
               <TodoList 
               todoDelete={todoDelete}
               todos={todos}
-              todoToogleCompleted={todoToogleCompleted}/>
+              todoToogleCompleted={todoToogleCompleted}
+              setTodoEdit={setTodoEdit}
+              />
           </div>
           <div className='col-4'>
               <TodoForm 
+                todoEdit={todoEdit}
                 todoAdd={todoAdd}
+                todoUpdate={todoUpdate}
+                setTodoEdit={setTodoEdit}
               />
           </div>
       </div>

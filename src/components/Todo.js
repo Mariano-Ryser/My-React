@@ -1,6 +1,6 @@
 import React from "react";
 
-const Todo = ({ todo, todoDelete, todoToogleCompleted })=>{
+const Todo = ({ todo, todoDelete, todoToogleCompleted, setTodoEdit })=>{
 
    
     return(
@@ -19,7 +19,9 @@ const Todo = ({ todo, todoDelete, todoToogleCompleted })=>{
                     </p>
                     <hr></hr>
                     <div className="d-flex justify-content-end">
-                            <button className="btn btn-sm btn-primary m-1">
+                            <button 
+                            onClick={()=>setTodoEdit(todo)}
+                            className="btn btn-sm btn-primary m-1">
                                 Editar
                             </button>
                             <button onClick={() => todoDelete(todo.id)}
